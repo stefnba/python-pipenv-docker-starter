@@ -17,3 +17,56 @@ Then, install all packages as specified in the `Pipfile` for the dev enviornment
 ```bash
 pipenv install --dev
 ```
+
+## Use in production
+
+Lock the environment to ensure it's the same one in production.
+
+```bash
+pipenv lock
+```
+
+Install all packages as recorded in your `Pipfile.lock`.
+
+```bash
+pipenv install --ignore-pipfile --deploy
+```
+
+Both commands can also be used with the provided makefile.
+
+```bash
+make packages-lock
+make packages-prod
+```
+
+## Misc.
+
+Other relevant commands are the following ones:
+
+Activate virtual enviornment
+
+```bash
+pipenv shell
+```
+
+Deactivate and exit virtual enviornment.
+
+```bash
+exit
+```
+
+Display where the virtual enviornment is located.
+
+```bash
+pipenv --venv
+```
+
+Find out where the home folder is located.
+
+```bash
+pipenv --where
+```
+
+## Use with Docker
+
+[Tutorial](https://sourcery.ai/blog/python-docker/)
