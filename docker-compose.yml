@@ -4,6 +4,6 @@ services:
         build:
             context: .
             args:
-                PY_VERSION: '3.10'
+                PY_VERSION: ${PY_VERSION:-3.10}
         env_file:
             - .env
