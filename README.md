@@ -6,10 +6,16 @@ Starter package for python apps with pipenv.
 
 Make sure you have pipenv installed on your machine.
 
-Running the below makefile command will create and activate a virtual enviornment with pipenv and python version 3.11, as specified in the makefile
+Running the below makefile command will create and activate a virtual enviornment with pipenv and python version 3.10.
 
 ```bash
 make setup
+```
+
+In case you need a different version of Python, the easiest way is the specify the version in a `.env` file in your project root folder.
+
+```env
+PY_VERSION=3.9
 ```
 
 Then, install all packages as specified in the `Pipfile` for the dev enviornment.
