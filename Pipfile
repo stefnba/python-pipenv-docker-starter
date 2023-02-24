@@ -9,6 +9,9 @@ requests = "*"
 [dev-packages]
 black = "*"
 pylint = "*"
+isort = "*"
+flake8 = "*"
+mypy = "*"
 
 [requires]
 python_version = "3.11"

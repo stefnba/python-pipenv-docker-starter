@@ -1,10 +1,10 @@
 # Python setup with pipenv
 setup:
 	mkdir ./.venv && pipenv shell --python 3.11
-packages-dev:
+install-dev:
 	pipenv install --dev
 packages-lock:
 	pipenv lock
-packages-prod:
+install-prod:
 	pipenv install --ignore-pipfile --deploy
 
