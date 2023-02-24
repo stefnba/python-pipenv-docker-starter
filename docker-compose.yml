@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+    app:
+        build:
+            context: .
+            args:
+                PY_VERSION: '3.10'
+        env_file:
+            - .env
